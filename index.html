@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Inclusive Forms</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Copse|Raleway&display=swap" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="/build/css/screen.css" />
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="/build/js/scripts.min.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- header -->
+<header class="container">
+  <h1>Inclusive Forms</h1>
+  <p>A template form for basic demographic information that is accessible and inclusive.</p>
+</header>
+
+<!-- main body -->
+<main class="container">
+
+  <form>
+
+    <!-- Name -->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Name</legend>
+      <div class="form-group form-row">
+        <div class="col-lg-12 ml-n5 mb-3">
+          <button type="button" class="btn btn-danger" data-toggle="popover" title="Here's why it's required" data-content="Gummies dragée marzipan. Chupa chups chocolate cake chocolate toffee. Jelly beans toffee wafer pastry brownie bonbon ice cream I love." aria-expanded="false" aria-haspopup="true"><span class="fas fa-fw fa-asterisk"></span> <span class="ml-2">Why is your name required?</span></button>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col">
+          <label id="name-first-label" for="name-first">First Name</label>
+          <input type="text" class="form-control" id="name-first" required aria-required="true" />
+        </div>
+        <div class="col-lg-3">
+          <label id="name-middle-label" for="name-middle">Middle Name or Initial</label>
+          <input type="text" class="form-control" id="name-middle" />
+        </div>
+        <div class="col">
+          <label id="name-last-label" for="name-last">Last Name</label>
+          <input type="text" class="form-control" id="name-last" required  aria-required="true" />
+        </div>
+      </div>
+    </fieldset>
+
+
+    <!-- Legal name-->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Legal Name</legend>
+      <div class="form-group form-row">
+        <div class="col-lg-12 ml-n5 mb-3">
+          <button type="button" class="btn btn-info" data-toggle="popover" title="Here's why we ask" data-content="Gummies dragée marzipan. Chupa chups chocolate cake chocolate toffee. Jelly beans toffee wafer pastry brownie bonbon ice cream I love."><span class="fas fa-fw fa-question-circle"></span> <span class="ml-2">Why do we ask for your legal name?</span></button>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col">
+          <label id="name-legal-first-label" for="name-legal-first">First Name</label>
+          <input type="text" class="form-control" id="name-legal-first" />
+        </div>
+        <div class="col-lg-3">
+          <label id="name-legal-middle-label" for="name-legal-middle">Middle Name or Initial</label>
+          <input type="text" class="form-control" id="name-legal-middle" />
+        </div>
+        <div class="col">
+          <label id="name-legal-last-label" for="name-legal-last">Last Name</label>
+          <input type="text" class="form-control" id="name-legal-last" />
+        </div>
+      </div>
+    </fieldset>
+
+
+
+    <!-- Location -->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Location</legend>
+      <div class="form-group form-row">
+        <div class="col-lg-12 ml-n5 mb-3">
+          <button type="button" class="btn btn-info" data-toggle="popover" title="Here's why we ask" data-content="Gummies dragée marzipan. Chupa chups chocolate cake chocolate toffee. Jelly beans toffee wafer pastry brownie bonbon ice cream I love."><span class="fas fa-fw fa-question-circle"></span> <span class="ml-2">Why do we ask for your location?</span></button>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col">
+          <label id="country-label" for="country">Country</label>
+          <input type="text" class="form-control" id="country" />
+        </div>
+        <div class="col-md-3">
+          <label id="state-label" for="state">State or Province</label>
+          <input type="text" class="form-control" id="state" />
+        </div>
+        <div class="col-md-3">
+          <label id="city-label" for="city">City</label>
+          <input type="text" class="form-control" id="city" />
+        </div>
+        <div class="col-md-2">
+          <label id="zip-label" for="zip">Postal code</label>
+          <input type="text" class="form-control" id="state" />
+        </div>
+      </div>
+    </fieldset>
+
+
+
+    <!-- Birth info -->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Birth Information</legend>
+      <div class="form-group form-row">
+        <div class="col-lg-12 ml-n5 mb-3">
+          <button type="button" class="btn btn-info" data-toggle="popover" title="Here's why we ask" data-content="Gummies dragée marzipan. Chupa chups chocolate cake chocolate toffee. Jelly beans toffee wafer pastry brownie bonbon ice cream I love."><span class="fas fa-fw fa-question-circle"></span> <span class="ml-2">Why do we ask for your birth information?</span></button>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col-lg-2">
+          <label class="form-row">Born in the U.S.?</label>
+          <div class="form-check-inline">
+            <input type="checkbox" class="form-check-input" name="saab" id="birth-us-yes" />
+            <label class="mb-n1 ml-1" id="birth-us-yes-label" for="birth-us-yes">Yes</label>
+          </div>
+          <div class="form-check-inline">
+            <input type="checkbox" class="form-check-input" name="saab" id="birth-us-no" />
+            <label class="mb-n1 ml-1" id="birth-us-no-label" for="birth-us-no">No</label>
+          </div>
+        </div>
+        <div class="col">
+          <label id="birth-date-label" for="birth-date">Birth date</label>
+          <input type="date" class="form-control" id="birth-date" />
+        </div>
+        <div class="col">
+          <label class="form-row">Sex assigned at birth</label>
+          <div class="form-check-inline">
+            <input type="radio" class="form-check-input" name="saab" id="birth-female" />
+            <label class="mb-n1 ml-1" id="birth-female-label" for="birth-female">Female</label>
+          </div>
+          <div class="form-check-inline">
+            <input type="radio" class="form-check-input" name="saab" id="birth-male" />
+            <label class="mb-n1 ml-1" id="birth-male-label" for="birth-male">Male</label>
+          </div>
+          <div class="form-check-inline">
+            <input type="radio" class="form-check-input" name="saab" id="birth-decline" />
+            <label class="mb-n1 ml-1" id="birth-decline-label" for="birth-decline">Decline to answer</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+
+
+    <!-- Education -->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Education</legend>
+      <div class="form-group form-row">
+        <div class="col-lg-12 ml-n5 mb-3">
+          <button type="button" class="btn btn-info" data-toggle="popover" title="Here's why we ask" data-content="Gummies dragée marzipan. Chupa chups chocolate cake chocolate toffee. Jelly beans toffee wafer pastry brownie bonbon ice cream I love."><span class="fas fa-fw fa-question-circle"></span> <span class="ml-2">Why do we ask for your level of education?</span></button>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col">
+          <label id="education-label" for="education">Highest Level of Education</label>
+          <input type="text" class="education form-control" id="education" />
+        </div>
+        <div class="col-lg-4">
+          <label id="degree-label" for="degree-yes">Degree earned</label>
+          <input type="text" class="degree form-control" id="degree" />
+        </div>
+      </div>
+    </fieldset>
+
+
+
+    <!-- Language -->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Languages</legend>
+      <div class="form-group form-row">
+        <div class="col-lg-12 ml-n5 mb-3">
+          <button type="button" class="btn btn-info" data-toggle="popover" title="Here's why we ask" data-content="Gummies dragée marzipan. Chupa chups chocolate cake chocolate toffee. Jelly beans toffee wafer pastry brownie bonbon ice cream I love."><span class="fas fa-fw fa-question-circle"></span> <span class="ml-2">Why do we ask which languages you speak?</span></button>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col-lg-2">
+          <label id="language-label" for="language">Languages</label>
+        </div>
+        <div class="col languages">
+          <input type="text" class="language form-control" id="language" />
+        </div>
+        <div class="col-lg-1">
+          <button type="button" class="btn text-primary" id="language-add" aria-label="Add another language"><span class="fas fa-fw fa-plus-circle fa-fw fa-lg"></span></button>
+        </div>
+      </div>
+    </fieldset>
+
+
+
+    <!-- Race -->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Racial Indentity and Ethnicity</legend>
+      <div class="form-group form-row">
+        <div class="col-lg-12 ml-n5 mb-3">
+          <button type="button" class="btn btn-info" data-toggle="popover" title="Here's why we ask" data-content="Gummies dragée marzipan. Chupa chups chocolate cake chocolate toffee. Jelly beans toffee wafer pastry brownie bonbon ice cream I love."><span class="fas fa-fw fa-question-circle"></span> <span class="ml-2">Why do we ask for your racial identity and ethnicity?</span></button>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col">
+          <label class="mr-3">Are you hispanic or latinx?</label>
+          <div class="form-check-inline">
+            <input type="checkbox" class="form-check-input" name="hispanic" id="hispanic-yes" />
+            <label class="mb-n1 ml-1" id="hispanic-yes-label" for="hispanic-yes">Yes</label>
+          </div>
+          <div class="form-check-inline">
+            <input type="checkbox" class="form-check-input" name="hispanic" id="hispanic-no" />
+            <label class="mb-n1 ml-1" id="hispanic-no-label" for="hispanic-no">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col-lg-2">
+          <label id="race-label" for="race">Racial Identity</label>
+        </div>
+        <div class="col races">
+          <input type="text" class="race form-control" id="race" />
+        </div>
+        <div class="col-lg-1">
+          <button type="button" class="btn text-primary" id="race-add" aria-label="Add another racial identity"><span class="fas fa-fw fa-plus-circle fa-fw fa-lg"></span></button>
+        </div>
+      </div>
+    </fieldset>
+
+
+
+    <!-- Gender -->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Gender Identity</legend>
+      <div class="form-group form-row">
+        <div class="col-lg-12 ml-n5 mb-3">
+          <button type="button" class="btn btn-info" data-toggle="popover" title="Here's why we ask" data-content="Gummies dragée marzipan. Chupa chups chocolate cake chocolate toffee. Jelly beans toffee wafer pastry brownie bonbon ice cream I love."><span class="fas fa-fw fa-question-circle"></span> <span class="ml-2">Why do we ask for your gender identity?</span></button>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col-lg-2">
+          <label id="gender-label" for="gender">Gender Identity</label>
+        </div>
+        <div class="col genders">
+          <input type="text" class="gender form-control" id="gender" />
+        </div>
+        <div class="col-lg-1">
+          <button type="button" class="btn text-primary" id="gender-add" aria-label="Add another gender identity"><span class="fas fa-fw fa-plus-circle fa-fw fa-lg"></span></button>
+        </div>
+      </div>
+    </fieldset>
+
+
+
+    <!-- Sexuality -->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Sexuality</legend>
+      <div class="form-group form-row">
+        <div class="col-lg-12 ml-n5 mb-3">
+          <button type="button" class="btn btn-info" data-toggle="popover" title="Here's why we ask" data-content="Gummies dragée marzipan. Chupa chups chocolate cake chocolate toffee. Jelly beans toffee wafer pastry brownie bonbon ice cream I love."><span class="fas fa-fw fa-question-circle"></span> <span class="ml-2">Why do we ask for your sexuality?</span></button>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col-lg-2">
+          <label id="sexuality-label" for="sexuality">Sexuality</label>
+        </div>
+        <div class="col sexualities">
+          <input type="text" class="sexuality form-control" id="sexuality" />
+        </div>
+        <div class="col-lg-1">
+          <button type="button" class="btn text-primary" id="sexuality-add" aria-label="Add another sexuality"><span class="fas fa-fw fa-plus-circle fa-fw fa-lg"></span></button>
+        </div>
+      </div>
+    </fieldset>
+
+
+
+    <!-- Food -->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Food Restrictions</legend>
+      <div class="form-group form-row">
+        <div class="col-lg-12 ml-n5 mb-3">
+          <button type="button" class="btn btn-info" data-toggle="popover" title="Here's why we ask" data-content="Gummies dragée marzipan. Chupa chups chocolate cake chocolate toffee. Jelly beans toffee wafer pastry brownie bonbon ice cream I love."><span class="fas fa-fw fa-question-circle"></span> <span class="ml-2">Why do we ask about your food restrictions?</span></button>
+        </div>
+      </div>
+      <div class="form-group form-row">
+        <div class="col">
+          <label id="food-allergy-label" for="food-allergy">Food Allergies</label>
+          <div class="form-row">
+            <div class="col food-allergies">
+              <input type="text" class="food-allergy form-control" id="food-allergy" />
+            </div>
+            <div class="col-lg-2">
+              <button type="button" class="btn text-primary" id="food-allergy-add" aria-label="Add another food allergy"><span class="fas fa-fw fa-plus-circle fa-fw fa-lg"></span></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <label id="food-diet-label" for="food-diet">Dietary Restrictions</label>
+          <div class="form-row">
+            <div class="col food-diets">
+              <input type="text" class="food-diet form-control" id="food-diet" />
+            </div>
+            <div class="col-lg-2">
+              <button type="button" class="btn text-primary" id="food-diet-add" aria-label="Add another dietary restriction"><span class="fas fa-fw fa-plus-circle fa-fw fa-lg"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+
+
+    <!-- Submit -->
+    <fieldset class="border border-dark rounded p-3 mb-3">
+      <legend class="col-form-label rounded bg-primary text-light p-3 ml-n5">Ready to submit your information?</legend>
+      <div class="form-group form-row">
+        <div class="col-md-3">
+          <button type="submit" class="btn btn-success btn-block btn-lg"><span class="fas fa-fw fa-share"></span><span class="ml-2">Submit</span></button>
+        </div>
+        <div class="col-md-3">
+          <button type="reset" class="btn btn-outline-secondary btn-block btn-lg"><span class="fas fa-fw fa-comment-slash"></span><span class="ml-2">Cancel</span></button>
+        </div>
+      </div>
+    </fieldset>
+
+  </form>
+
+</main>
+
+
+
+</body>
+</html>
