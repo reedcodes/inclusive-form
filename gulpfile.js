@@ -12,7 +12,7 @@ const jsFiles = [
   './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
   './node_modules/@fortawesome/fontawesome-free/js/all.min.js',
   './source/js/**/*.js'
-]
+];
 
 gulp.task( 'sass', function () {
   return gulp.src( cssFiles )
